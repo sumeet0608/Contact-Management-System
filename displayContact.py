@@ -4,7 +4,7 @@ from tkinter import ttk
 import mysql.connector
 from mysql.connector import Error
 
-mydb=mysql.connector.connect(host='localhost',user="root",passwd="@Sumeet06",db="contactdb",autocommit=True)
+mydb=mysql.connector.connect(host='localhost',user="root",passwd="",db="contactdb",autocommit=True)
 mycursor=mydb.cursor()
 class Display(Toplevel):
     def __init__(self,firstName,lastName):
