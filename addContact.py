@@ -82,7 +82,7 @@ class AddContact(Toplevel):
         if fName=="" or fName=="First Name" or lName=="" or fName=="Last Name" or eMail=="" or eMail=="email@example.com" or phoneNo=="" or city=="":
             mb.showwarning("Insert Status","All fields required",icon="warning")
         else:
-            mydb=mysql.connector.connect(host='localhost',user="root",passwd="@Sumeet06",db="contactdb",autocommit=True)
+            mydb=mysql.connector.connect(host='localhost',user="root",passwd="",db="contactdb",autocommit=True)
             mycursor=mydb.cursor()
             sql = "INSERT INTO addressbook (FName, LName, Email, Phone_Number, City) VALUES (%s, %s, %s, %s, %s)"
             val = (fName, lName, eMail, phoneNo, city)
