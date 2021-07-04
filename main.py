@@ -8,7 +8,7 @@ import tkinter as tk
 class Application(object):
     def __init__(self,master):
         self.master=master
-        IMAGE_PATH = 'D:\\VS PYTHON\\ContactBook\\images\\bg1.png'
+        IMAGE_PATH = 'bg1.png'
         WIDTH, HEIGHT = 600, 500   
         #frames
         self.top=Frame(master,height=150,bg="#b35c44")  # ccffff
@@ -49,7 +49,7 @@ def main():
     app = Application(root)
     root.geometry("600x500+350+20")
     root.title("Phone Book Application")
-    root.iconbitmap("D:\VS PYTHON\ContactBook\images\icon.ico")
+    root.iconbitmap("icon.ico")
     root.resizable(False,False)
     root.mainloop()
 
